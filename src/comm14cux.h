@@ -7,6 +7,7 @@
 
 #include <stdint.h>
 #include <stdbool.h>
+#include <stdio.h>
 
 #if defined(WIN32)
 #include <windows.h>
@@ -48,11 +49,11 @@
 #endif
 #else
 /** Placeholder macro for error-condition debug logging */
-#define dprintf_err
+#define dprintf_err printf
 /** Placeholder macro for warning-condition debug logging */
-#define dprintf_warn
+#define dprintf_warn printf
 /** Placeholder macro for informational debug logging */
-#define dprintf_info
+#define dprintf_info printf
 #endif
 
 #ifdef __cplusplus

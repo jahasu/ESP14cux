@@ -28,7 +28,6 @@
 
 #include "comm14cux.h"
 #include "comm14cux_internal.h"
-#include "comm14cux_version.h"
 
 /**
  * Swaps multibyte big-endian data (from the ECU) into the local endianness.
@@ -107,11 +106,7 @@ void c14cux_cleanup(c14cux_info* info)
 c14cux_version c14cux_getLibraryVersion()
 {
   c14cux_version ver;
-
-  ver.major = COMM14CUX_VER_MAJOR;
-  ver.minor = COMM14CUX_VER_MINOR;
-  ver.patch = COMM14CUX_VER_PATCH;
-
+  ver.major =1;
   return ver;
 }
 

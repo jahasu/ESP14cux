@@ -1081,5 +1081,6 @@ bool c14cux_driveIdleAirControlMotor(c14cux_info* info, const uint8_t direction,
     c14cux_writeMem(info, C14CUX_Bits_008A, iacDirection);
     c14cux_writeMem(info, C14CUX_IdleAirControlStepCountOffset, steps);
   }
+  return retVal;
 }
 
